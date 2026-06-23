@@ -85,23 +85,6 @@
     padding-top: 10px;
 }
 
-/* ==========================================================================
-   RESPONSIVIDADE (MEDIA QUERIES) DA SKILLS GRID
-   ========================================================================== */
-@media (max-width: 992px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 cards por linha em tablets */
-    }
-}
-
-@media (max-width: 600px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-        /* 1 card por linha em celulares */
-        gap: 15px;
-    }
-}
 
 /* ==========================================================================
    SEÇÃO DE APIS E INTEGRAÇÕES
@@ -261,40 +244,6 @@
     line-height: 1.6;
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-    .api-cards-grid {
-        grid-template-columns: 1fr;
-        /* Quebra para 1 coluna em mobile */
-        gap: 20px;
-    }
-
-    .api-progress-bar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        padding-left: 20px;
-    }
-
-    .progress-line {
-        left: 40px;
-        top: 10px;
-        bottom: 10px;
-        width: 4px;
-        height: auto;
-    }
-
-    .progress-step {
-        flex-direction: row;
-        width: 100%;
-        gap: 15px;
-    }
-
-    .step-label {
-        margin-top: 0;
-        text-align: left;
-    }
-}
 
 .softskills-container {
     margin-top: 20px;

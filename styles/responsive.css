@@ -1,0 +1,115 @@
+/* ==========================================================================
+   ARQUIVO GERAL DE RESPONSIVIDADE
+   ========================================================================== */
+
+/* --- TABLETS --- */
+@media (max-width: 992px) {
+    /* Da seção de skills */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --- MOBILE E TABLETS PEQUENOS --- */
+@media (max-width: 768px) {
+    /* Layout geral (style.css) */
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        position: static;
+        padding: 25px 20px;
+    }
+
+    .side-bar-navigation-menu {
+        position: static;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+        gap: 5px;
+        border-right: none;
+        border-bottom: 1px solid var(--border-dark);
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+
+    .nav-link:hover {
+        padding-left: 12px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .content-section {
+        padding: 25px;
+    }
+
+    .footer {
+        margin-left: 0;
+    }
+
+    /* Da seção de APIs (skills.css) */
+    .api-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .api-progress-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-left: 20px;
+    }
+
+    .progress-line {
+        left: 40px;
+        top: 10px;
+        bottom: 10px;
+        width: 4px;
+        height: auto;
+    }
+
+    .progress-step {
+        flex-direction: row;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .step-label {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    /* Da seção about-me (about-me.css) */
+    .about-hero,
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    /* Da seção de informações extras (aditionals.css) */
+    .information-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Projects grid adjustment (projects.css) */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- MOBILE PEQUENO --- */
+@media (max-width: 600px) {
+    /* Da seção de skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
