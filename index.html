@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/skills.css" />
     <link rel="stylesheet" href="styles/projects.css" />
     <link rel="stylesheet" href="styles/aditionals.css" />
+    <link rel="stylesheet" href="styles/about-me.css" />
 
     <title>Portfólio Pablo</title>
   </head>
@@ -29,31 +30,106 @@
     </nav>
 
     <main class="main-content">
-      <section id="aboutMe" class="content-section">
-        <h2 class="title-section">Desenvolvedor Full-Stack</h2>
-        <p>
-          Sou estudante de Engenharia de Software e formado como Técnico em
-          Desenvolvimento de Sistemas, complementando minha formação com
-          capacitações voltadas ao mercado de tecnologia, como o programa
-          <span class="transforme-se">Transforme-se</span>, da
-          <span class="transforme-se">Serasa Experian</span>. Ao longo da minha
-          trajetória, desenvolvi uma base sólida em desenvolvimento Full-Stack,
-          trabalhando com tecnologias como C#, .NET, Node.js, PHP, JavaScript,
-          TypeScript, Angular, React e jQuery, além de bancos de dados MySQL,
-          PostgreSQL, Firebase e Supabase. Possuo experiência na criação de
-          aplicações web completas, desenvolvimento e consumo de APIs REST,
-          modelagem e otimização de bancos de dados, integração entre sistemas,
-          autenticação de usuários, versionamento de código com Git e
-          implementação de soluções focadas em desempenho, segurança e
-          escalabilidade. Também aplico boas práticas de desenvolvimento, como
-          Clean Code, princípios SOLID, arquitetura em camadas e metodologias
-          ágeis, incluindo Scrum e Kanban. Além das competências técnicas,
-          destaco minha capacidade de resolução de problemas, pensamento
-          analítico, facilidade para aprender novas tecnologias, organização,
-          proatividade e trabalho em equipe. Estou sempre em busca de novos
-          desafios que contribuam para meu crescimento profissional e para a
-          entrega de soluções que gerem valor aos usuários e às organizações.
-        </p>
+      <section id="aboutMe" class="content-section about-section">
+        <h2 class="title-section">Sobre mim</h2>
+
+        <div class="about-hero">
+          <div class="about-hero-copy">
+            <span class="about-kicker">Desenvolvedor Full-Stack</span>
+            <h3>
+              Construo soluções web com foco em produto, performance e evolução
+              contínua.
+            </h3>
+            <p>
+              Sou técnico em Desenvolvimento de Sistemas, com experiência em
+              desenvolvimento Full-Stack, integrações, APIs, bancos de dados e
+              automação de processos.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <strong>10+</strong>
+              <span>projetos desenvolvidos</span>
+            </div>
+            <div class="stat-card">
+              <strong>4</strong>
+              <span>APIs integradas</span>
+            </div>
+            <div class="stat-card">
+              <strong>2+</strong>
+              <span>anos de experiência</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-layout">
+          <article class="about-panel">
+            <h3>Formação</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                  <h4>Análise e Desenvolvimento de Sistemas</h4>
+                  <p>Em andamento.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+
+                <div class="timeline-content">
+                  <h4>Técnico em Desenvolvimento de Sistemas</h4>
+                  <p>
+                    Formação concluída com foco em desenvolvimento Full-Stack,
+                    bancos de dados, arquitetura de software, metodologias ágeis
+                    e desenvolvimento de aplicações web.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="about-tags" style="margin-top: 200px">
+              <span>API REST</span>
+              <span>SQL</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Node.js</span>
+              <span>PHP</span>
+              <span>Git</span>
+              <span>Scrum</span>
+            </div>
+          </article>
+
+          <article class="about-panel">
+            <h3>Programas e experiências</h3>
+            <div class="about-list">
+              <div class="info-pill transforme-se">
+                <strong>Transforme-se</strong>
+                <span>Serasa Experian</span>
+              </div>
+
+              <div class="info-pill cyberguard">
+                <strong>CyberGuard</strong>
+                <span>Projeto Integrador</span>
+              </div>
+
+              <div class="info-pill fourpet">
+                <strong>Fourpet</strong>
+                <span>ERP, APIs e contato com clientes</span>
+              </div>
+
+              <div class="info-pill beeia">
+                <strong>Beeia CRM</strong>
+                <span>Funis, Kanban e integrações</span>
+              </div>
+
+              <div class="info-pill rpgon">
+                <strong>RPG-ON</strong>
+                <span>Projeto pessoal</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
       <section id="skills" class="content-section">
         <h2 class="title-section">Competências</h2>
@@ -487,8 +563,7 @@
         <h2 class="title-section">Além do Código</h2>
 
         <p class="information-intro">
-          Um pouco sobre minha trajetória, interesses e alguns momentos
-          importantes que contribuíram para meu desenvolvimento profissional.
+          Um pouco sobre minha trajetória e sobre mim.
         </p>
 
         <div class="information-grid">
@@ -512,38 +587,44 @@
           <!-- Fotos -->
           <div class="gallery-card">
             <div class="memory-card">
-              <img src="assets/information/senai.jpg" alt="Projeto no SENAI" />
+              <img
+                src="assets/information/linkinpark.jpg"
+                alt="Projeto no SENAI"
+              />
 
               <div class="memory-info">
-                <h4>Projeto Integrador</h4>
+                <h4>Nu Metal</h4>
                 <p>
-                  Participação como Product Owner e líder técnico no
-                  desenvolvimento do CyberGuard em parceria com a Serasa
-                  Experian.
+                  Sou um grande fã de rock, especialmente do gênero Nu Metal.
+                  Bandas como Linkin Park, Korn, Deftones, Limp Bizkit e
+                  Slipknot fazem parte da trilha sonora do meu dia a dia e
+                  sempre têm espaço garantido na minha playlist. A música é uma
+                  das minhas principais fontes de inspiração e energia, tanto
+                  nos momentos de lazer quanto durante o desenvolvimento de
+                  projetos. Inclusive, tenho planos de criar uma aplicação
+                  voltada para esse universo, onde pretendo registrar e
+                  compartilhar os shows que já participei, além de acompanhar os
+                  próximos eventos que desejo assistir.
                 </p>
               </div>
             </div>
 
             <div class="memory-card">
-              <img src="assets/information/equipe.jpg" alt="Equipe" />
+              <img src="assets/information/heavys.jpeg" alt="Equipe" />
 
               <div class="memory-info">
-                <h4>Trabalho em Equipe</h4>
+                <h4>Academia</h4>
                 <p>
-                  Desenvolvimento colaborativo utilizando Scrum, Git e
-                  metodologias ágeis.
-                </p>
-              </div>
-            </div>
-
-            <div class="memory-card">
-              <img src="assets/information/setup.jpg" alt="Setup" />
-
-              <div class="memory-info">
-                <h4>Meu Setup</h4>
-                <p>
-                  Ambiente utilizado diariamente para estudo, desenvolvimento e
-                  criação de projetos pessoais.
+                  Sou apaixonado por academia e pela busca constante por
+                  evolução. Desde 2022, mantenho uma rotina consistente de
+                  treinos, encarando cada desafio como uma oportunidade de
+                  desenvolvimento pessoal. Essa disciplina reforçou uma das
+                  principais lições que levo também para a minha carreira na
+                  tecnologia: resultados expressivos são construídos por meio de
+                  constância, dedicação e melhoria contínua. Acredito que a
+                  consistência é um dos pilares fundamentais para alcançar
+                  objetivos, seja na vida pessoal, nos estudos ou no
+                  desenvolvimento de software.
                 </p>
               </div>
             </div>

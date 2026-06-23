@@ -161,16 +161,6 @@ body {
     margin-bottom: 20px;
 }
 
-.transforme-se {
-    background: linear-gradient(90deg,
-            rgb(152, 89, 240) 0%,
-            rgb(185, 120, 255) 50%,
-            rgb(125, 58, 230) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
 .margin-top {
     margin-top: 50px;
 }
