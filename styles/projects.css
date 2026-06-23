@@ -1,0 +1,126 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 28px;
+    margin-top: 25px;
+}
+
+.projects-intro {
+    max-width: 850px;
+    margin: 18px auto 35px;
+    text-align: center;
+    color: #a9a9a9;
+    line-height: 1.7;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+
+    background:#181818;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    overflow:hidden;
+
+    transition:.35s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--transforme-se);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .35);
+}
+
+.project-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-content{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    padding:25px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.project-header h3 {
+    font-size: 1.35rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tags span {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(152, 89, 240, .15);
+    color: rgb(183, 130, 255);
+    font-size: .78rem;
+}
+
+.project-content p{
+    flex:1;
+    margin:18px 0 24px;
+    color:#bfbfbf;
+    line-height:1.65;
+    font-size:.95rem;
+}
+
+.project-footer{
+    margin-top:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.project-footer a {
+    text-decoration: none;
+    color: var(--transforme-se);
+    font-weight: 600;
+}
+
+.project-footer span {
+    color: #888;
+    font-size: .9rem;
+}
+
+.professional {
+    border-left: 5px solid var(--transforme-se);
+}
+
+.project-highlights{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:12px 0;
+}
+
+.project-highlights span{
+    font-size:.8rem;
+    padding:5px 10px;
+    border-radius:999px;
+    background:#232323;
+    color:#d0d0d0;
+}

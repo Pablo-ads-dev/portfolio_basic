@@ -1,0 +1,239 @@
+:root {
+    --bg-main: #050709;
+    --text-primary: #a0a5ab;
+    --bg-header: #0b0f14;
+    --border-dark: #141b24;
+    --accent-blue: #4b9fe1;
+    --accent-blue-dark: #2b5c8f;
+    --bg-sidebar: #080b0f;
+    --text-secondary: #80868f;
+    --bg-hover: #11161e;
+    --bg-section: #080c11;
+    --border-section: #10161f;
+    --border-hover: #1d293a;
+    --transforme-se: rgb(152, 89, 240);
+}
+
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E RESET
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    /* Preto absoluto/soberbio (mais escuro) */
+    color: var(--text-primary);
+    /* Texto cinza neutro para baixo contraste e conforto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. HEADER (TOPO HORIZONTAL)
+   ========================================================================== */
+.header {
+    width: 100%;
+    background-color: var(--bg-header);
+    /* Preto azulado bem fechado */
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-dark);
+    /* Linha divisória escura e sutil */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-title {
+    font-size: 1.6rem;
+    color: var(--accent-blue);
+    /* Azul suave fosco e menos brilhante */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.header-subtitle {
+    font-size: 0.8rem;
+    color: var(--accent-blue-dark);
+    /* Azul escuro/suave de apoio */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.img-profile {
+    width: 75px;
+    /* Tamanho aumentado conforme solicitado */
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-blue-dark);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   3. MENU LATERAL (SIDEBAR)
+   ========================================================================== */
+.side-bar-navigation-menu {
+    width: 240px;
+    background-color: var(--bg-sidebar);
+    /* Tom intermediário super escuro */
+    display: flex;
+    flex-direction: column;
+    padding: 40px 15px;
+    gap: 10px;
+    border-right: 1px solid var(--border-dark);
+    position: fixed;
+    top: 116px;
+    /* Ajustado para a nova altura do Header com a foto maior */
+    bottom: 0;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+}
+
+/* Efeito de Interação (Hover) */
+.nav-link:hover {
+    background-color: var(--bg-hover);
+    /* Realce cinza-azulado bem discreto */
+    color: var(--accent-blue);
+    /* Acende o azul suave */
+    padding-left: 22px;
+    /* Deslocamento elegante */
+}
+
+/* ==========================================================================
+   4. CONTEÚDO PRINCIPAL (MAIN E SECTIONS)
+   ========================================================================== */
+.main-content {
+    margin-left: 240px;
+    /* Alinhado ao recuo da sidebar fixa */
+    flex: 1;
+    padding: 50px 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-section {
+    background-color: var(--bg-section);
+    /* Seções pretas com leve nuance azulada */
+    border-radius: 8px;
+    padding: 40px;
+    min-height: 260px;
+    border: 1px solid var(--border-section);
+    /* Borda escura sutil */
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.3s ease;
+}
+
+/* Brilho cirúrgico nas bordas ao passar o mouse */
+.content-section:hover {
+    border-color: var(--border-hover);
+}
+
+/* Rodapé */
+.footer {
+    margin-left: 240px;
+    padding: 30px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--accent-blue-dark);
+    border-top: 1px solid var(--border-section);
+}
+
+.title-section {
+    color: var(--accent-blue);
+    margin-bottom: 20px;
+}
+
+.transforme-se {
+    background: linear-gradient(90deg,
+            rgb(152, 89, 240) 0%,
+            rgb(185, 120, 255) 50%,
+            rgb(125, 58, 230) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.margin-top-sm {
+    margin-top: 25px;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-hr {
+    border-bottom: #80868f 1px solid;
+    padding-bottom: 15px;
+}
+
+/* ==========================================================================
+   5. RESPONSIVIDADE (MOBILE)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        position: static;
+        padding: 25px 20px;
+    }
+
+    .side-bar-navigation-menu {
+        position: static;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+        gap: 5px;
+        border-right: none;
+        border-bottom: 1px solid var(--border-dark);
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+
+    .nav-link:hover {
+        padding-left: 12px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .content-section {
+        padding: 25px;
+    }
+
+    .footer {
+        margin-left: 0;
+    }
+}
