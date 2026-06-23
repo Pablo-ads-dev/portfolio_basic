@@ -1,0 +1,81 @@
+#information {
+    margin-top: 70px;
+}
+
+.information-intro {
+    max-width: 800px;
+    margin: 20px auto 40px;
+    text-align: center;
+    color: #b8b8b8;
+    line-height: 1.7;
+}
+
+.information-grid {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 35px;
+}
+
+.about-card {
+    background: #181818;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 20px;
+    padding: 28px;
+    height: fit-content;
+}
+
+.about-card h3 {
+    margin-bottom: 22px;
+}
+
+.curiosity-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.curiosity-list li {
+    color: #cfcfcf;
+    line-height: 1.6;
+}
+
+.gallery-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.memory-card {
+    background: #181818;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.memory-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--transforme-se);
+}
+
+.memory-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.memory-info {
+    padding: 18px;
+}
+
+.memory-info h4 {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.memory-info p {
+    color: #b7b7b7;
+    line-height: 1.6;
+    font-size: .92rem;
+}
